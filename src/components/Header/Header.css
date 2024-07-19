@@ -1,0 +1,64 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header Styles */
+.header {
+  height: 30vw;
+  margin: 30px auto;
+  background: url('/src/assets/food-facebook-cover-09.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 21%;
+  left: 13vw;
+}
+
+.header-contents h2 {
+  font-weight: 700; /* Use the correct font weight */
+  color: #fff; /* White */
+  font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+  color: #fff; /* White */
+  font-size: 1vw;
+}
+
+.header-contents button {
+  padding: 3px 1vw;
+  font-size: 1vw;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 65%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .header-contents button {
+    padding: 2vw 4vw;
+    font-size: 2vw;
+  }
+}
